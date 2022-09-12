@@ -1,11 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
-    body{
-      max-width: 1200px;
-      margin: 20px auto;
-      padding: 0 20px;
-      font-family: 'Noto Serif', serif;
-      max-width: 1200px;
-    }
     p, h1, h2, h3, a, ul{
       margin: 0;
       padding: 0;
@@ -39,26 +32,6 @@
     nav p, nav a{
       color: #777;
       font-weight: 300;
-    }
-    footer{
-      color: #777;
-      text-align: center;
-      margin: 80px auto 20px;
-    }
-    #page-container {
-      position: relative;
-      min-height: 100vh;
-    }
-    
-    #content-wrap {
-      padding-bottom: 2.5rem;    /* Footer height */
-    }
-    
-    #footer {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      height: 2.5rem;            /* Footer height */
     }
     h2{
       margin-bottom: 40px;
@@ -126,3 +99,9 @@
       font-size: 1.2em;
       cursor: pointer;
     }
+    .flex-wrapper {
+			display: flex;
+			min-height: 100vh;
+			flex-direction: column;
+			justify-content: space-between;
+		}

@@ -6,22 +6,22 @@
 
   
 
-  <div id="page-container">
-    <div id="content-wrap">
-      <div class="details content">
-        <h2><%= blog.title %></h2>
-        <div class="content">
-          <p><%= blog.body %></p>
-        </div>
-        <a class="delete" data-doc="<%= blog._id %>">
-          <img src = "/trashcan.svg", alt = "delete icon">
-        </a>
+  <div class="flex-wrapper">
+    <div class="details content">
+      <h2><%= blog.title %></h2>
+      <div class="content">
+        <p><%= blog.body %></p>
       </div>
+      <a class="delete" data-doc="<%= blog._id %>">
+        <img src = "/trashcan.svg", alt = "delete icon">
+      </a>
     </div>
     <%- include("../partials/footer.ejs") %>
   </div>
   
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+  crossorigin="anonymous"></script>
   <script>
     const trashcan = document.querySelector('a.delete');
 
